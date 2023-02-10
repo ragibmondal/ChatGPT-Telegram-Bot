@@ -7,15 +7,15 @@ import openai
 #OpenAI API key
 aienv = os.getenv('OPENAI_KEY')
 if aienv == None:
-    openai.api_key = "ENTER YOUR API KEY HERE"
+    openai.api_key = "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"
 else:
     openai.api_key = aienv
 print(aienv)
 
 #Telegram bot key
-tgenv = os.getenv('TELEGRAM_KEY')
+tgenv = os.getenv('6057729959:AAE6zU4zmHgfY2D--5hwjeMojyBMkZCO6qo')
 if tgenv == None:
-    tgkey = "ENTER YOUR TELEGRAM TOKEN HERE"
+    tgkey = ""
 else:
     tgkey = tgenv
 print(tgenv)
@@ -35,8 +35,8 @@ running = False
 cache = None
 qcache = None
 chat_log = None
-botname = 'Harshit ethic'
-username = 'harshitethic_bot'
+botname = 'Chat_GPT OIKKO Mess'
+username = 'chat_gpt_ragibbot'
 # Max chat log length (A token is about 4 letters and max tokens is 2048)
 max = int(3000)
 
@@ -66,8 +66,8 @@ def start(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'Chat_GPT OIKKO Mess'
+        username = 'chat_gpt_ragibbot'
         update.message.reply_text('Hi')
         return 
     else:
@@ -93,16 +93,16 @@ def reset(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'Chat_GPT OIKKO Mess'
+        username = 'chat_gpt_ragibbot'
         update.message.reply_text('Bot has been reset, send a message!')
         return
     if tim == 1:
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'Chat_GPT OIKKO Mess'
+        username = 'chat_gpt_ragibbot'
         update.message.reply_text('Bot has been reset, send a message!')
         return 
     else:
@@ -128,8 +128,8 @@ def retry(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'Chat_GPT OIKKO Mess'
+        username = 'chat_gpt_ragibbot'
         update.message.reply_text('Send a message!')
         return 
     else:
@@ -190,7 +190,7 @@ def wait(bot, update, botname, username, new):
                 qcache = None
                 user = ""
                 username = 'harshitethic_bot'
-                botname = 'Harshit Ethic'
+                botname = 'chat_gpt_ragibbot'
                 update.message.reply_text('Timer has run down, bot has been reset to defaults.')
                 running = False
     else:
