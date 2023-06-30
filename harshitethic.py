@@ -7,13 +7,13 @@ import openai
 #OpenAI API key
 aienv = os.getenv('OPENAI_KEY')
 if aienv == None:
-    openai.api_key = "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"
+    openai.api_key = "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"
 else:
     openai.api_key = aienv
 print(aienv)
 
 #Telegram bot key
-tgenv = os.getenv('6057729959:AAE6zU4zmHgfY2D--5hwjeMojyBMkZCO6qo')
+tgenv = os.getenv('5865941166:AAFC6Ms_RjMmwysTlcTJKQC9s1Y-Elaj1SY')
 if tgenv == None:
     tgkey = ""
 else:
@@ -66,8 +66,8 @@ def start(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Chat_GPT OIKKO Mess'
-        username = 'chat_gpt_ragibbot'
+        botname = 'ai chat bot'
+        username = 'ragibchatbot'
         update.message.reply_text('Hi')
         return 
     else:
